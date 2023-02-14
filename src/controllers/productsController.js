@@ -52,6 +52,8 @@ const controller = {
 	store: (req, res) => {
 		const {name,price,discount,category,description} = req.body
 
+		// return res.send(req.body)
+
 		const newProduct = {
 			id : products[products.length - 1].id + 1,
 			name : name.trim(),
